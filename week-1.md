@@ -1,5 +1,5 @@
 ---
-title: Week 1
+title: "Week 1: Getting Started"
 layout: default
 ---
 
@@ -10,7 +10,7 @@ layout: default
 >
 > - Set up a modern development environment
 > - Understand how to work on the command-line
-> - Learn about the `uv` and `npm` package managers and why they are useful
+> - Learn about the `uv` package managers
 > - Learn our pull request workflow using `git`
 > - Make your first pull request (and deal with a merge conflict!)
 
@@ -27,9 +27,18 @@ like.
 
 - For Windows users: Install WSL and Ubuntu, super important! Lots of web dev
   stuff breaks on non-WSL environments.
-- IDE: VSCode / Cursor
+- Install an IDE: VSCode / Cursor
   - Github Copilot is free for students, be sure to use!
-- Terminal: iTerm2 / Ghostty
+  - Install these extensions for VSCode:
+    1. https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+    1. https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+    1. After installing extensions and setting them up, you should be able to paste
+        this code into a Python file and watch it auto-format when you
+        save:
+        <https://gist.github.com/SamLau95/09f4bf2bb52824a5c34733d5b6478f77>.
+        Then, paste this code into a JS file and watch it auto-format as well!
+        <https://gist.github.com/SamLau95/d14f73f82b9322a62f56feced1d4a442>
+- Optional: Install a feature-rich terminal app: iTerm2 / Ghostty
 
 macOS-specific:
 - Install `brew` for CLI tools
@@ -89,7 +98,7 @@ Rationale:
 > 1. How can you quickly search your command history? What does `history` do
 >    and how do you trigger reverse search?
 
-## `uv` and `npm`
+## `uv`
 
 - install `uv`: <https://docs.astral.sh/uv/>
 - we will strongly prefer using `uv` over `pip` and `conda` where possible.
@@ -103,6 +112,7 @@ Rationale:
 > 1. What does a lockfile provide, and where does `uv` write it in a project?
 > 1. How do you add a runtime dependency vs. a dev dependency with `uv`?
 > 1. How do you run a module or script through `uv` without activating the venv?
+> 1. How do you activate the venv? What does activating the venv do?
 > 1. Start a new `uv` project targeting Python `3.13`. Add `jupyterlab` and
 >    `babypandas==1.0.0.dev1`. Launch JupyterLab, create a notebook, `import
 >    babypandas as bpd`, build a tiny DataFrame (e.g., names and ages), sort it
