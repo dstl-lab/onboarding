@@ -4,9 +4,9 @@ theme: just-the-docs
 
 url: https://dstl.ucsd.edu/onboarding
 
+
 aux_links:
   repo: https://github.com/dstl-lab/onboarding
-
 
 # https://just-the-docs.com/docs/configuration/#callouts
 callouts:
@@ -24,3 +24,6 @@ callouts:
   warning:
     title: Warning
     color: red
+
+plugins:
+  - jekyll-target-blank
