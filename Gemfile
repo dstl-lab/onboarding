@@ -9,3 +9,5 @@ gem "just-the-docs", "0.10.1" # pinned to the current release
 # fixes deprecation warning:
 # https://github.com/just-the-docs/just-the-docs/issues/1541
 gem 'sass-embedded', '~> 1.78.0'
+
+gem 'jekyll-target-blank'
