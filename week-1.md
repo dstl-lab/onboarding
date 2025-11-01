@@ -102,7 +102,8 @@ Rationale:
 
 - install `uv`: <https://docs.astral.sh/uv/>
 - we will strongly prefer using `uv` over `pip` and `conda` where possible.
-- rationale: <https://www.bitecode.dev/p/a-year-of-uv-pros-cons-and-should>
+- rationale: <https://emily.space/posts/251023-uv>
+  - more advanced rationale: <https://www.bitecode.dev/p/a-year-of-uv-pros-cons-and-should>
 
 
 {: .important-title}
@@ -143,3 +144,30 @@ Rationale:
 > 1. When the other person approves the PR, merge the PR.
 > 1. Verify that the build works correctly, then see your updated picture at
 >    <https://dstl.ucsd.edu/>!
+
+## CITI training
+
+As research who work with human subjects, we are required to do ethics training.
+
+Go to: https://about.citiprogram.org/
+
+- Create a login using your main @ucsd address (not an alias)
+- This is how campus tracks compliance
+
+- Add University of California, San Diego as your institution
+
+Add a course
+
+- Check boxes Human Subjects Research and Responsible Conduct of Research
+- Check boxes Social & Behavioral Research Investigators and Social & Behavioral Research Investigators Refresher
+- Check single radial button Social and Behavioral Responsible Conduct of Research Course
+- Check none at this time for webinars
+
+You should be assigned
+
+- Social & Behavioral Research - Basic/Refresher
+- Social and Behavioral Responsible Conduct of Research
+- Complete and add certificate (not completion report) URL to [our lab
+  roster][roster]
+
+[roster]: https://docs.google.com/spreadsheets/d/1oXFQGSOyTtftZ7JquWI-CEKiGE7rRtrRc7XMaeqdfhE/edit?gid=188343779#gid=188343779

@@ -9,5 +9,5 @@ layout: default
 > Goals
 >
 > - Learn rationale behind React
-> - Understand why we use JS bundlers like `vite`
+> - Understand why we use JS bundlers
 > - Create a basic React app
