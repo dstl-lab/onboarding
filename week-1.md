@@ -149,7 +149,7 @@ Rationale:
 
 As research who work with human subjects, we are required to do ethics training.
 
-Go to: https://about.citiprogram.org/
+Go to: <https://about.citiprogram.org/>
 
 - Create a login using your main @ucsd address (not an alias)
 - This is how campus tracks compliance
