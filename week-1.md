@@ -13,6 +13,7 @@ layout: default
 > - Learn about the `uv` package managers
 > - Learn our pull request workflow using `git`
 > - Make your first pull request (and deal with a merge conflict!)
+> - Complete ethics training
 
 {: .warning}
 > Sam drafted these pages super quickly, so there are probably lots of details
