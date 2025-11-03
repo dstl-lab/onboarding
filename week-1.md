@@ -31,8 +31,8 @@ like.
 - Install an IDE: VSCode / Cursor
   - Github Copilot is free for students, be sure to use!
   - Install these extensions for VSCode:
-    1. https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
-    1. https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+    1. <https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff>
+    1. <https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode>
     1. After installing extensions and setting them up, you should be able to paste
         this code into a Python file and watch it auto-format when you
         save:
