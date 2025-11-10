@@ -54,6 +54,9 @@ layout: default
 >
 > 1. What is a JavaScript bundler and why do we need one? What problems do
 >    bundlers solve that can't be handled with plain HTML `<script>` tags?
+> 1. List all the files/folders that get changed when you run `npm install @tanstack/react-query`.
+> 1. What is more appropriate, and why: `npm install prettier`? Or `npm install
+>    -D prettier`?
 > 1. What is the difference between a development build and a production build?
 >    Why does Vite optimize differently for each?
 > 1. What is Hot Module Replacement (HMR)? How does it improve the developer
@@ -63,3 +66,46 @@ layout: default
 > 1. What is TypeScript and why might you want to use it over plain JavaScript?
 > 1. What files does Vite generate when you run `npm run build`? Where do they
 >    go and how would you deploy them to a web server (e.g. in Flask)?
+
+## React: Tic-Tac-Toe
+
+- Follow <https://react.dev/learn/tutorial-tic-tac-toe> to build a tic-tac-toe
+  app in your `dstl-onboarding-vite` project, then push your changes to GitHub.
+  - To get started, fork <https://github.com/dstl-lab/dstl-onboarding-react>
+    onto your personal GitHub account, `git clone` your fork, and run `npm
+    install`.
+  - Now, you can start following the tic-tac-toe tutorial starting from the
+    section titled "Setup for the tutorial".
+- One key difference is that we are working in a Typescript file, not a plain JS
+  file. This means that certain steps in the tutorial will produce Typescript
+  errors. The first one you'll run into is probably in "Passing data through
+  props".
+  - You should edit the code so that the errors are fixed. Don't leave the
+    errors alone, and don't change the file extension to `.jsx`.
+- After you're done with the main tutorial, complete ALL the suggested
+  improvements (#1-5) for the tic-tac-toe app.
+- Make a pull request from your  to the original repo
+  (<https://github.com/dstl-lab/dstl-onboarding-react>). The pull request should
+  include a short screen recording showing how your app works after you
+  implemented improvements #4 and #5 ("highlighting the three squares that
+  caused the win" and "displaying the location for each move in the move history
+  list").
+
+{: .important-title}
+> Now, check your knowledge:
+>
+> 1. What does it mean to "lift state up" in React? Why did we need to do this
+>    in the tic-tac-toe game?
+> 1. The tutorial emphasizes immutability when updating the `squares` array.
+>    Explain why we use `squares.slice()` instead of modifying the array
+>    directly. What benefits does immutability provide?
+> 1. In the final game, how does the `Game` component calculate `xIsNext`
+>    without storing it in state? Why is this approach better than storing it
+>    as a separate state variable?
+> 1. What is the purpose of the `key` prop in the list of moves? What would
+>    happen if you used the move description as the key instead of the move
+>    index?
+> 1. When working with TypeScript in React, why do you need to define types for
+>    component props? What errors did you encounter and how did you fix them?
+> 1. Describe how you implemented improvement #4. What React concepts did you
+>    need to use to complete it?
