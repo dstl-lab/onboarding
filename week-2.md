@@ -56,6 +56,15 @@ Please read the following article:
 ## Creating a Simple App
 Complete the following mini-project:
 - <https://github.com/dstl-lab/flask-reddit-demo>
+- Start by forking the repo onto your personal GitHub account.
+- When you've completed the project, make a pull request to the original repo.
+  We won't merge the PR but we will use it to check your implementation.
+
+
+{: .warning}
+> You **don't need JavaScript** for any part of this app, although if you end up
+> implementing the app that way feel free!
+
 
 {: .important-title}
 > Now, check your knowledge:
