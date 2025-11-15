@@ -63,9 +63,46 @@ layout: default
 >    experience compared to traditional full-page reloads?
 > 1. In your own words, explain what happens when you run `npm run dev` vs.
 >    `npm run build` in a Vite project.
-> 1. What is TypeScript and why might you want to use it over plain JavaScript?
 > 1. What files does Vite generate when you run `npm run build`? Where do they
 >    go and how would you deploy them to a web server (e.g. in Flask)?
+
+## Typescript
+
+- Watch <https://www.destroyallsoftware.com/talks/wat>, a legendary talk about
+  crazy results from programming languages. The JS examples in particular are a
+  key motivation for using Typescript.
+- Read <https://www.typescriptlang.org/>
+- Read <https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html>
+- Read <https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html#types-by-inference>
+- Read the Typescript handbook:
+  - <https://www.typescriptlang.org/docs/handbook/2/basic-types.html>
+  - <https://www.typescriptlang.org/docs/handbook/2/everyday-types.html>
+  - <https://www.typescriptlang.org/docs/handbook/2/narrowing.html>
+  - <https://www.typescriptlang.org/docs/handbook/2/functions.html>
+  - <https://www.typescriptlang.org/docs/handbook/2/objects.html>
+  - (skip type manipulation for now, although the Generics page is useful)
+  - <https://www.typescriptlang.org/docs/handbook/2/classes.html>
+  - <https://www.typescriptlang.org/docs/handbook/2/modules.html>
+
+{: .important-title}
+> Now, check your knowledge:
+>
+> 1. What is TypeScript and why might you want to use it over plain JavaScript?
+> 1. Why does `[] + []` produce `0` in JS? What does Typescript do instead?
+> 1. Why does `[] + {}` produce `"[object Object]"` in JS? What does Typescript do instead?
+> 1. What does it mean when we say that Typescript is "structurally typed"? How
+>    is this different from Python, for example?
+> 1. What is the difference between optional parameters and parameters with default
+>    values in TypeScript functions? How do you define each?
+> 1. What is the difference between `interface` and `type` in TypeScript when
+>    defining object shapes? When might you prefer one over the other?
+> 1. What does it mean when a class `implements` an interface? How is this
+>    different from `extends`?
+> 1. What is the difference between default exports and named exports in
+>    TypeScript modules? Can you mix both in a single file?
+> 1. When you import a module, what is the difference between `import * as name`
+>    and `import { thing }` syntax? When would you use each?
+
 
 ## React: Tic-Tac-Toe
 
