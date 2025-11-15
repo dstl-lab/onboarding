@@ -9,7 +9,8 @@ layout: default
 > Goals
 >
 > - Learn rationale behind React
-> - Understand why we use JS bundlers
+> - Understand why we use JS bundlers and become familiar with `vite`, our bundler of choice
+> - Learn Typescript rationale and basics
 > - Create a basic React app
 
 ## React Basics
