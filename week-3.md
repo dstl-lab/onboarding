@@ -70,7 +70,7 @@ layout: default
 ## React: Tic-Tac-Toe
 
 - Follow <https://react.dev/learn/tutorial-tic-tac-toe> to build a tic-tac-toe
-  app in your `dstl-onboarding-vite` project, then push your changes to GitHub.
+  app.
   - To get started, fork <https://github.com/dstl-lab/dstl-onboarding-react>
     onto your personal GitHub account, `git clone` your fork, and run `npm
     install`.
