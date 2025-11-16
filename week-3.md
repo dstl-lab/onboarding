@@ -89,7 +89,7 @@ layout: default
 > Now, check your knowledge:
 >
 > 1. What is TypeScript and why might you want to use it over plain JavaScript?
-> 1. Why does `[] + []` produce `0` in JS? What does Typescript do instead?
+> 1. Why does `[] + []` produce the empty string in JS? What does Typescript do instead?
 > 1. Why does `[] + {}` produce `"[object Object]"` in JS? What does Typescript do instead?
 > 1. What does it mean when we say that Typescript is "structurally typed"? How
 >    is this different from Python, for example?
@@ -132,6 +132,7 @@ layout: default
 {: .important-title}
 > Now, check your knowledge:
 >
+> 1. (Note to Sam: Make sure to give 1 point for each PR)
 > 1. What does it mean to "lift state up" in React? Why did we need to do this
 >    in the tic-tac-toe game?
 > 1. The tutorial emphasizes immutability when updating the `squares` array.
