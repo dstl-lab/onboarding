@@ -133,6 +133,8 @@ layout: default
 > Now, check your knowledge:
 >
 > 1. (Note to Sam: Make sure to give 1 point for each PR)
+> 1. (Note to DSTL: Sam will open your PRs and ask you questions about your
+>    code. Be ready to justify your code choices.)
 > 1. What does it mean to "lift state up" in React? Why did we need to do this
 >    in the tic-tac-toe game?
 > 1. The tutorial emphasizes immutability when updating the `squares` array.
