@@ -1,6 +1,11 @@
+---
+title: 'Working with the NRP'
+layout: default
+---
+
 # sam's notes for getting started with the NRP
 
-following https://nrp.ai/documentation/userdocs/start/getting-started/:
+following <https://nrp.ai/documentation/userdocs/start/getting-started/>:
 
 ```bash
 brew install kubectl
@@ -35,16 +40,16 @@ metadata:
   name: test-pod
 spec:
   containers:
-  - name: mypod
-    image: ubuntu
-    resources:
-      limits:
-        memory: 500Mi
-        cpu: 500m
-      requests:
-        memory: 500Mi
-        cpu: 500m
-    command: ["sh", "-c", "echo 'Im a new pod' && sleep infinity"]
+    - name: mypod
+      image: ubuntu
+      resources:
+        limits:
+          memory: 500Mi
+          cpu: 500m
+        requests:
+          memory: 500Mi
+          cpu: 500m
+      command: ['sh', '-c', "echo 'Im a new pod' && sleep infinity"]
 ```
 
 Then, ran:

@@ -363,6 +363,8 @@ on your team.
 > 1. Once your app is deployed, leave a follow-up comment on your PR with the URL
 >    of your app. (Sam: Give 1 point for each working URL.)
 > 1. What is a virtual machine and why is called "virtual"?
+> 1. What happens if you close your terminal window that was running `uv run
+>    uvicorn`? What would you need to do to keep the server running?
 > 1. What if we update the app backend code and want to redeploy our production
 >    web app? What would we need to do?
 > 1. What if we update the app frontend code and want to redeploy our production

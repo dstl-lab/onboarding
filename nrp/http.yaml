@@ -1,0 +1,96 @@
+# Deployment - runs 2 replicas of an Apache HTTP server
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-http
+  labels:
+    k8s-app: test-http
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      k8s-app: test-http
+  template:
+    metadata:
+      labels:
+        k8s-app: test-http
+    spec:
+      initContainers:
+      - name: myinit
+        image: busybox
+        command: ["sh", "-c", "echo '<html><body><h1>I am ' `hostname` '</h1></body></html>' > /usr/local/apache2/htdocs/index.html"]
+        volumeMounts:
+        - name: dataroot
+          mountPath: /usr/local/apache2/htdocs
+      containers:
+      - name: mypod
+        image: httpd:alpine
+        resources:
+           limits:
+             memory: 200Mi
+             cpu: 1
+           requests:
+             memory: 50Mi
+             cpu: 50m
+        volumeMounts:
+        - name: dataroot
+          mountPath: /usr/local/apache2/htdocs
+      volumes:
+      - name: dataroot
+        emptyDir: {}
+---
+# Service - exposes the deployment internally on port 80
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    k8s-app: test-svc
+  name: test-svc
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    k8s-app: test-http
+  type: ClusterIP
+---
+# Ingress - exposes the service externally with TLS
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: test-ingress
+spec:
+  ingressClassName: haproxy
+  rules:
+  - host: test-service-sam.nrp-nautilus.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: test-svc
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - test-service-sam.nrp-nautilus.io
+---
+# Curl pod - for testing connectivity from inside the cluster
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-curl-pod
+spec:
+  containers:
+  - name: mycurlpod
+    image: curlimages/curl:latest
+    resources:
+      limits:
+        memory: 200Mi
+        cpu: 200m
+      requests:
+        memory: 200Mi
+        cpu: 200m
+    command: ["sh", "-c", "echo 'Im a new curl pod' && sleep infinity"]
